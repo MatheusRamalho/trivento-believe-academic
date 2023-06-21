@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	input, select, textarea {
+		@apply w-full h-14 m-0 py-0 px-4 border border-gray-200 bg-transparent rounded-lg text-gray-700 placeholder:text-sm;
+		@apply placeholder:italic placeholder:text-gray-500;
+		@apply disabled:cursor-not-allowed disabled:bg-gray-100;
+		@apply focus:outline-gray-300
+	}
+
+	select {
+		@apply my-2 px-2
+	}
+
+	textarea {
+		@apply resize-none h-64 my-2 py-4
+	}
+
+	label {
+		@apply min-h-[1.688rem] text-sm font-medium text-gray-700 flex items-center
+	}
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #FFFFFF;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialised;
+}
+
+.bg-gradient-primary {
+	background: linear-gradient(220.94deg, #E13773 14.43%, #B81D54 85.28%);
+}

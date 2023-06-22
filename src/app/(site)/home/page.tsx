@@ -1,5 +1,6 @@
 import { HeaderPage } from '@/components/HeaderPage'
 import { Section } from '@/components/Section'
+import { SubjectsOffered } from '@/components/SubjectsOffered'
 
 export default function Home() {
 	return (
@@ -45,6 +46,8 @@ export default function Home() {
 
 					<cite> Trivento Educação </cite>
 				</blockquote>
+
+				{/* <SubjectsOffered disciplines={} /> */}
 			</Section>
 		</>
 	)

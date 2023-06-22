@@ -24,7 +24,7 @@ export const Footer = () => {
 
                     <ul className="flex items-center justify-center flex-wrap gap-2 mt-3">
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Instagram">
+                            <Link href="https://www.instagram.com/triventoeducacao/" target="_blank" title="Link do perfil do Instagram">
                                 <Icon
                                     name="Instagram"
                                     customClass="w-8 h-8 stroke-white"
@@ -33,7 +33,7 @@ export const Footer = () => {
                         </li>
 
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Linkedin">
+                            <Link href="https://br.linkedin.com/company/trivento-educacao" target="_blank" title="Link do perfil do Linkedin">
                                 <Icon
                                     name="Linkedin"
                                     customClass="w-8 h-8 stroke-white"
@@ -52,7 +52,7 @@ export const Footer = () => {
 
                     <ul className="flex items-center justify-center flex-wrap gap-2 mt-3">
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Instagram">
+                            <Link href="https://www.instagram.com/alis.itabirito/?hl=pt-br" target="_blank" title="Link do perfil do Instagram">
                                 <Icon
                                     name="Instagram"
                                     customClass="w-8 h-8 stroke-white"
@@ -61,7 +61,7 @@ export const Footer = () => {
                         </li>
 
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Facebook">
+                            <Link href="https://m.facebook.com/alisitabirito/?locale2=pt_BR" target="_blank" title="Link do perfil do Facebook">
                                 <Icon
                                     name="Facebook"
                                     customClass="w-8 h-8 stroke-white"
@@ -80,7 +80,7 @@ export const Footer = () => {
 
                     <ul className="flex items-center justify-center flex-wrap gap-2 mt-3">
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Instagram">
+                            <Link href="https://www.instagram.com/serradouradaaltamira/?hl=pt-br" target="_blank" title="Link do perfil do Instagram">
                                 <Icon
                                     name="Instagram"
                                     customClass="w-8 h-8 stroke-white"
@@ -89,7 +89,7 @@ export const Footer = () => {
                         </li>
 
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Facebook">
+                            <Link href="https://pt-br.facebook.com/serradouradaaltamira/" target="_blank" title="Link do perfil do Facebook">
                                  <Icon
                                     name="Facebook"
                                     customClass="w-8 h-8 stroke-white"
@@ -108,7 +108,7 @@ export const Footer = () => {
 
                     <ul className="flex items-center justify-center flex-wrap gap-2 mt-3">
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Instagram">
+                            <Link href="https://www.instagram.com/serradouradalorena/?hl=pt-br" target="_blank" title="Link do perfil do Instagram">
                                 <Icon
                                     name="Instagram"
                                     customClass="w-8 h-8 stroke-white"
@@ -117,7 +117,7 @@ export const Footer = () => {
                         </li>
 
                         <li className="w-10 h-10 rounded-lg flex items-center justify-center hover:bg-primary-800">
-                            <Link href="" target="_blank" title="Link do perfil do Facebook">
+                            <Link href="https://pt-br.facebook.com/serradouradalorena/" target="_blank" title="Link do perfil do Facebook">
                                  <Icon
                                     name="Facebook"
                                     customClass="w-8 h-8 stroke-white"

@@ -96,39 +96,39 @@ export const Navbar = () => {
                         <div className="hidden sm:block sm:h-[inherit]">
                             <NavbarItem name="Acreditar Acadêmico">
                                 <Dropdown.Root>
-                                    <Dropdown.Item name="Sobre o programa" link="program/about" />
-                                    <Dropdown.Item name="Como funciona" link="program/operation" />
-                                    <Dropdown.Item name="Qual o investimento" link="program/investment" />
-                                    <Dropdown.Item name="Disciplinas" link="program/subjects" />
-                                    <Dropdown.Item name="Dúvidas Frequentes" link="program/questions" />
+                                    <Dropdown.Item name="Sobre o programa" link="/program/about" />
+                                    <Dropdown.Item name="Como funciona" link="/program/operation" />
+                                    <Dropdown.Item name="Qual o investimento" link="/program/investment" />
+                                    <Dropdown.Item name="Disciplinas" link="/program/subjects" />
+                                    <Dropdown.Item name="Dúvidas Frequentes" link="/program/questions" />
                                 </Dropdown.Root>
                             </NavbarItem>
                         </div>
 
                         <div className="sm:hidden">
                             <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/about"> Sobre o programa </Link>
+                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/about"> Sobre o programa </Link>
                             </li>
 
                             <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/operation"> Como funciona </Link>
+                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/operation"> Como funciona </Link>
                             </li>
 
                             <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/investment"> Qual o investimento </Link>
+                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/investment"> Qual o investimento </Link>
                             </li>
 
                             <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/subjects"> Disciplinas </Link>
+                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/subjects"> Disciplinas </Link>
                             </li>
 
                             <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/questions"> Dúvidas Frequentes </Link>
+                                <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/questions"> Dúvidas Frequentes </Link>
                             </li>
                         </div>
 
                         <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
-                            <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="program/about"> Trivento </Link>
+                            <Link className="w-full h-full flex items-center group-hover:text-primary-500" href="/program/about"> Trivento </Link>
                         </li>
 
                         <li className="group h-14 border-b-4 border-transparent hover:border-primary-500 sm:h-[inherit] sm:flex sm:items-center sm:justify-center sm:mb-0">
@@ -141,7 +141,7 @@ export const Navbar = () => {
             <nav className="sm:w-72 h-full px-8">
                 <ul className="flex items-center gap-5 justify-end h-full">
                     <li className="">
-                        <Link className="group" href="" title="Carrinho">
+                        <Link className="group" href="/shoppingCart" title="Carrinho">
                             <Icon
                                 name="ShoppingCart"
                                 customClass="w-8 h-8 stroke-gray-500 group-hover:stroke-primary-500"
@@ -150,7 +150,7 @@ export const Navbar = () => {
                     </li>
 
                     <li className="">
-                        <Link className="group" href="login" title="Login">
+                        <Link className="group" href="/login" title="Login">
                             <Icon
                                 name="User2"
                                 customClass="w-8 h-8 stroke-gray-500 group-hover:stroke-primary-500"

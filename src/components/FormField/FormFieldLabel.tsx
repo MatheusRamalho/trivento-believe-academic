@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 interface FormFieldLabelProps {
     name: string
     inputName: string
-    children: ReactNode
+    children?: ReactNode
 }
 
 export const FormFieldLabel = ({ name, inputName, children }: FormFieldLabelProps) => {

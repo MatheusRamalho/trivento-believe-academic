@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -10,7 +11,6 @@ import { FormField } from '@/components/FormField'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { HeaderPage } from '@/components/HeaderPage'
-import Link from 'next/link'
 
 const checkoutShoppingCartFormSchema = zod.object({
     document_number: zod.string(),
@@ -26,7 +26,7 @@ const checkoutShoppingCartFormSchema = zod.object({
     phone_number: zod
         .string()
         .min(11, { message: 'O número de celular não pode ter menos de 11 dígitos.' })
-        .max(15, { message: 'O número de celular não pode ter mais de 11 dígitos.' }),
+        .max(15, { message: 'O número de celular não pode ter mais de 15 dígitos.' }),
 })
 
 type CheckoutFormDataProps = zod.infer<typeof checkoutShoppingCartFormSchema>
@@ -69,8 +69,8 @@ export default function CheckoutPage() {
                         >
                             <Fieldset
                                 toTheForm="formCheckout"
-                                name="dataContactForm"
-                                legend="Dados"
+                                name="dataCheckoutForm"
+                                legend="Dados do cliente"
                             >
                                 <FormField.Root>
                                     <FormField.Label name="CPF" inputName="document_number">

@@ -1,4 +1,5 @@
 import { SubjectProps } from '@/types/Subject'
+
 import { Icon } from './Icon'
 
 export const ShoppingCartItem = (props: SubjectProps) => {

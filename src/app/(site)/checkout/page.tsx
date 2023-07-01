@@ -72,12 +72,11 @@ export default function CheckoutPage() {
                                 name="dataContactForm"
                                 legend="Dados"
                             >
-                                <FormField
-                                    labelRequired
-                                    labelName="CPF"
-                                    inputName="document_number"
-                                    inputErrorMessage={formState.errors.document_number && formState.errors.document_number.message}
-                                >
+                                <FormField.Root>
+                                    <FormField.Label name="CPF" inputName="document_number">
+                                        <FormField.Mandatory />
+                                    </FormField.Label>
+
                                     <input
                                         id="document_number"
                                         className="input"
@@ -85,15 +84,16 @@ export default function CheckoutPage() {
                                         required
                                         {...register('document_number')}
                                     />
-                                </FormField>
+
+                                    <FormField.Error message={formState.errors.document_number && formState.errors.document_number.message} />
+                                </FormField.Root>
 
                                 <div className="sm:flex sm:items-center sm:justify-between sm:flex-wrap sm:gap-4">
-                                    <FormField
-                                        labelRequired
-                                        labelName="Nome"
-                                        inputName="first_name"
-                                        inputErrorMessage={formState.errors.first_name && formState.errors.first_name.message}
-                                    >
+                                    <FormField.Root>
+                                        <FormField.Label name="Nome" inputName="first_name">
+                                            <FormField.Mandatory />
+                                        </FormField.Label>
+
                                         <input
                                             id="first_name"
                                             className="input"
@@ -101,14 +101,15 @@ export default function CheckoutPage() {
                                             required
                                             {...register('first_name')}
                                         />
-                                    </FormField>
 
-                                    <FormField
-                                        labelRequired
-                                        labelName="Sobrenome"
-                                        inputName="last_name"
-                                        inputErrorMessage={formState.errors.last_name && formState.errors.last_name.message}
-                                    >
+                                        <FormField.Error message={formState.errors.first_name && formState.errors.first_name.message} />
+                                    </FormField.Root>
+
+                                    <FormField.Root>
+                                        <FormField.Label name="Sobrenome" inputName="last_name">
+                                            <FormField.Mandatory />
+                                        </FormField.Label>
+
                                         <input
                                             id="last_name"
                                             className="input"
@@ -116,16 +117,17 @@ export default function CheckoutPage() {
                                             required
                                             {...register('last_name')}
                                         />
-                                    </FormField>
+
+                                        <FormField.Error message={formState.errors.last_name && formState.errors.last_name.message} />
+                                    </FormField.Root>
                                 </div>
 
                                 <div className="sm:flex sm:items-center sm:justify-between sm:flex-wrap sm:gap-4">
-                                    <FormField
-                                        labelRequired
-                                        labelName="E-mail"
-                                        inputName="email"
-                                        inputErrorMessage={formState.errors.email && formState.errors.email.message}
-                                    >
+                                    <FormField.Root>
+                                        <FormField.Label name="E-mail" inputName="email">
+                                            <FormField.Mandatory />
+                                        </FormField.Label>
+
                                         <input
                                             className="input"
                                             id="email"
@@ -134,14 +136,15 @@ export default function CheckoutPage() {
                                             required
                                             {...register('email')}
                                         />
-                                    </FormField>
 
-                                    <FormField
-                                        labelRequired
-                                        labelName="Telefone"
-                                        inputName="phone_number"
-                                        inputErrorMessage={formState.errors.phone_number && formState.errors.phone_number.message}
-                                    >
+                                        <FormField.Error message={formState.errors.email && formState.errors.email.message} />
+                                    </FormField.Root>
+
+                                    <FormField.Root>
+                                        <FormField.Label name="Telefone" inputName="phone_number">
+                                            <FormField.Mandatory />
+                                        </FormField.Label>
+
                                         <input
                                             className="input"
                                             id="phone_number"
@@ -152,7 +155,9 @@ export default function CheckoutPage() {
                                             required
                                             {...register('phone_number')}
                                         />
-                                    </FormField>
+
+                                        <FormField.Error message={formState.errors.phone_number && formState.errors.phone_number.message} />
+                                    </FormField.Root>
                                 </div>
                             </Fieldset>
 

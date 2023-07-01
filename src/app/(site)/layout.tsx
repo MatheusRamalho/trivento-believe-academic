@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
-import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { Navbar } from '@/components/Navbar'
 
 interface SiteLayoutProps {
     children: ReactNode
@@ -10,7 +10,7 @@ interface SiteLayoutProps {
 export default function SiteLayout({ children }: SiteLayoutProps) {
     return (
         <div className="w-full h-full">
-            <Navbar />
+            <Navbar.Root />
 
             <main className="min-h-screen mt-24">
                 {children}

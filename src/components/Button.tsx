@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     isFull?: boolean
 }
 

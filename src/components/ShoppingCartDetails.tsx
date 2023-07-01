@@ -16,7 +16,9 @@ interface ShoppingCartDetailsProps {
 }
 
 export const ShoppingCartDetails = ({ loading, size, values }: ShoppingCartDetailsProps) => {
-    const max = Math.max(...Object.keys(values.installments).map((item) => parseInt(item)))
+    const max = Math.max(...Object.keys(values.installments).map((item) => {
+        return (parseInt(item))
+    }))
 
     return (
         <div

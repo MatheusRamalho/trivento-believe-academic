@@ -1,5 +1,5 @@
-import { DropdownItem } from './Item'
-import { DropdownRoot } from './Root'
+import { DropdownItem } from './DropdownItem'
+import { DropdownRoot } from './DropdownRoot'
 
 export const Dropdown = {
     Root: DropdownRoot,

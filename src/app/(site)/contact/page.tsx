@@ -68,12 +68,11 @@ export default function ProgramContactPage() {
                             legend="Dados"
                         >
                             <div className="sm:flex sm:items-center sm:justify-between sm:flex-wrap sm:gap-4">
-                                <FormField
-                                    labelRequired
-                                    labelName="Nome completo"
-                                    inputName="name"
-                                    inputErrorMessage={formState.errors.name && formState.errors.name.message}
-                                >
+                                <FormField.Root>
+                                    <FormField.Label name="Nome completo" inputName="name">
+                                        <FormField.Mandatory />
+                                    </FormField.Label>
+
                                     <input
                                         id="name"
                                         className="input"
@@ -81,14 +80,15 @@ export default function ProgramContactPage() {
                                         required
                                         {...register('name')}
                                     />
-                                </FormField>
 
-                                <FormField
-                                    labelRequired
-                                    labelName="E-mail"
-                                    inputName="email"
-                                    inputErrorMessage={formState.errors.email && formState.errors.email.message}
-                                >
+                                    <FormField.Error message={formState.errors.name && formState.errors.name.message} />
+                                </FormField.Root>
+
+                                <FormField.Root>
+                                    <FormField.Label name="E-mail" inputName="email">
+                                        <FormField.Mandatory />
+                                    </FormField.Label>
+
                                     <input
                                         className="input"
                                         id="email"
@@ -97,14 +97,15 @@ export default function ProgramContactPage() {
                                         required
                                         {...register('email')}
                                     />
-                                </FormField>
 
-                                <FormField
-                                    labelRequired
-                                    labelName="Telefone"
-                                    inputName="mobilephone"
-                                    inputErrorMessage={formState.errors.mobilephone && formState.errors.mobilephone.message}
-                                >
+                                    <FormField.Error message={formState.errors.email && formState.errors.email.message} />
+                                </FormField.Root>
+
+                                <FormField.Root>
+                                    <FormField.Label name="Telefone" inputName="mobilephone">
+                                        <FormField.Mandatory />
+                                    </FormField.Label>
+
                                     <input
                                         className="input"
                                         id="mobilephone"
@@ -115,15 +116,16 @@ export default function ProgramContactPage() {
                                         required
                                         {...register('mobilephone')}
                                     />
-                                </FormField>
+
+                                    <FormField.Error message={formState.errors.mobilephone && formState.errors.mobilephone.message} />
+                                </FormField.Root>
                             </div>
 
-                            <FormField
-                                labelRequired
-                                labelName="Assunto"
-                                inputName="message"
-                                inputErrorMessage={formState.errors.message && formState.errors.message.message}
-                            >
+                            <FormField.Root>
+                                <FormField.Label name="Assunto" inputName="message">
+                                    <FormField.Mandatory />
+                                </FormField.Label>
+
                                 <textarea
                                     className="textarea"
                                     id="message"
@@ -132,7 +134,9 @@ export default function ProgramContactPage() {
                                     aria-describedby="info"
                                     {...register('message')}
                                 ></textarea>
-                            </FormField>
+
+                                <FormField.Error message={formState.errors.message && formState.errors.message.message} />
+                            </FormField.Root>
                         </Fieldset>
 
                         <Button

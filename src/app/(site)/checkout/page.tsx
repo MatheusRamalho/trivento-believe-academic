@@ -11,6 +11,7 @@ import { FormField } from '@/components/FormField'
 import { Section } from '@/components/Section'
 import { Button } from '@/components/Button'
 import { HeaderPage } from '@/components/HeaderPage'
+import { ShoppingCartResume } from '@/components/ShoppingCartResume'
 
 const checkoutShoppingCartFormSchema = zod.object({
     document_number: zod.string(),
@@ -174,164 +175,57 @@ export default function CheckoutPage() {
                     </div>
 
                     <div className="flex-1 border-l border-gray-200 px-10">
-                        <div className="shadow-sm rounded-lg p-4 pt-0">
-                            <h2 className="font-bold text-3xl text-gray-700 mb-4 pb-2 border-b border-gray-100"> Resumo do pedido </h2>
+                        <ShoppingCartResume.Root title="Resumo do pedido">
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Total:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Cartão:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Forma de Pagamento:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                            </ShoppingCartResume.Group>
 
-                            <dl className="border-b border-gray-100 p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Total: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Nome do Comprador:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="CPF:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="E-mail:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Telefone:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                            </ShoppingCartResume.Group>
 
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Cartão: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Endereço:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Complemento:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Bairro:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Cidade:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="Estado:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                                <ShoppingCartResume.Item description="CEP:" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+                            </ShoppingCartResume.Group>
+                        </ShoppingCartResume.Root>
 
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Forma de Pagamento: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-                            </dl>
-
-                            <dl className="border-b border-gray-100 p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Nome do Comprador: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> CPF: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Telefone: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> E-mail: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-                            </dl>
-
-                            <dl className="p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Endereço: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Complemento: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Bairro: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Cidade: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Estado: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> CEP: </dt>
-                                    <dd className="text-gray-600"> njknjk cdsklnmkl kmklmcsd </dd>
-                                </div>
-                            </dl>
-                        </div>
-
-                        {/* <div className="shadow-sm rounded-lg p-4 pt-0">
-                            <h2 className="font-bold text-3xl text-gray-700 mb-4 pb-2 border-b border-gray-100"> Resumo do pedido </h2>
-
-                            <dl className="border-b border-gray-100 p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Total: </dt>
-                                    <dd className="text-gray-600">
-                                        { order.number_installments === '1'
-                                            ? values.installments[order.number_installments]
-                                            : values.total_with_discount
-                                        }
-                                    </dd>
-                                </div>
-
+                        {/* <ShoppingCartResume.Root title="Resumo do pedido">
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Total:" value={order.number_installments === '1' ? values.installments[order.number_installments] : values.total_with_discount} />
                                 {order.number_installments && (
                                     <>
-                                        <div className="flex items-center flex-wrap gap-2 mb-1">
-                                            <dt className="text-gray-700 font-bold text-sm"> Cartão: </dt>
-                                            <dd className="text-gray-600"> {`****${card.card_number.slice(-4)}`} </dd>
-                                        </div>
-
-                                        <div className="flex items-center flex-wrap gap-2 mb-1">
-                                            <dt className="text-gray-700 font-bold text-sm"> Forma de Pagamento: </dt>
-                                            <dd className="text-gray-600"> {`${order.number_installments}x de ${values.installments[order.number_installments]}`} </dd>
-                                        </div>
+                                        <ShoppingCartResume.Item description="Cartão:" value={`****${card.card_number.slice(-4)}`} />
+                                        <ShoppingCartResume.Item description="Forma de Pagamento:" value={`${order.number_installments}x de ${values.installments[order.number_installments]}`} />
                                     </>
                                 )}
-                            </dl>
+                            </ShoppingCartResume.Group>
 
-                            <dl className="border-b border-gray-100 p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Nome do Comprador: </dt>
-                                    <dd className="text-gray-600"> {`${customer.first_name} ${customer.last_name}`} </dd>
-                                </div>
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Nome do Comprador:" value={`${customer.first_name} ${customer.last_name}`} />
+                                <ShoppingCartResume.Item description="CPF:" value={customer.document_number} />
+                                <ShoppingCartResume.Item description="E-mail:" value={customer.email} />
+                                <ShoppingCartResume.Item description="Telefone:" value={customer.phone_number} />
+                            </ShoppingCartResume.Group>
 
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> CPF: </dt>
-                                    <dd className="text-gray-600"> {customer.document_number} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Telefone: </dt>
-                                    <dd className="text-gray-600"> {customer.phone_number} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> E-mail: </dt>
-                                    <dd className="text-gray-600"> {customer.email} </dd>
-                                </div>
-                            </dl>
-
-                            <dl className="p-3">
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Endereço: </dt>
-                                    <dd className="text-gray-600"> {`${address.street} ${address.number}`} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Complemento: </dt>
-                                    <dd className="text-gray-600"> {address.complement} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Bairro: </dt>
-                                    <dd className="text-gray-600"> {address.district} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Cidade: </dt>
-                                    <dd className="text-gray-600"> {address.city} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> Estado: </dt>
-                                    <dd className="text-gray-600"> {address.state} </dd>
-                                </div>
-
-                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                    <dt className="text-gray-700 font-bold text-sm"> CEP: </dt>
-                                    <dd className="text-gray-600"> {address.postal_code} </dd>
-                                </div>
-                            </dl>
-                        </div> */}
+                            <ShoppingCartResume.Group>
+                                <ShoppingCartResume.Item description="Endereço:" value={`${address.street} ${address.number}`} />
+                                <ShoppingCartResume.Item description="Complemento:" value={address.complement} />
+                                <ShoppingCartResume.Item description="Bairro:" value={address.district} />
+                                <ShoppingCartResume.Item description="Cidade:" value={address.city} />
+                                <ShoppingCartResume.Item description="Estado:" value={address.state} />
+                                <ShoppingCartResume.Item description="CEP:" value={address.postal_code} />
+                            </ShoppingCartResume.Group>
+                        </ShoppingCartResume.Root> */}
                     </div>
                 </div>
             </Section>

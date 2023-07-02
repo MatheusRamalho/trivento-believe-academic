@@ -11,8 +11,8 @@ import { FormField } from '@/components/FormField'
 const loginFormSchema = zod.object({
     coduser: zod
         .string()
-        .min(11, { message: 'O codigo não pode ter menos de 11 dígitos.' })
-        .max(11, { message: 'O codigo não pode ter mais de 11 dígitos.' }),
+        .min(9, { message: 'O codigo não pode ter menos de 9 dígitos.' })
+        .max(9, { message: 'O codigo não pode ter mais de 9 dígitos.' }),
     password: zod.string()
 })
 

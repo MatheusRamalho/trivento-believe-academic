@@ -31,7 +31,16 @@ body {
 	-webkit-font-smoothing: antialised;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .bg-gradient-primary {
 	background: linear-gradient(220.94deg, #E13773 14.43%, #B81D54 85.28%);
 }
-
